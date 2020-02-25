@@ -6,21 +6,43 @@ var addition = document.getElementById('button-addition')
 var subtraction = document.getElementById('button-subtraction')
 var multiplication = document.getElementById('button-multiplication')
 var division = document.getElementById('button-division')
+var equals = document.getElementById('button-equals')
+var operation
 var result =document.getElementById('result')
 
- addition.addEventListener('click', function (){ 
- 	result.innerHTML = parseInt(val1.value) + parseInt(val2.value)
+addition.addEventListener('click', function (){ 
+ 	operation = '+'
          
  })
+
   subtraction.addEventListener('click', function (){ 
- 	result.innerHTML = parseInt(val1.value) - parseInt(val2.value)
+ 	operation = '-'
          
  })
     multiplication.addEventListener('click', function (){ 
- 	result.innerHTML = parseInt(val1.value) * parseInt(val2.value)
+ 	operation = '*'
          
  })
      division.addEventListener('click', function (){ 
- 	result.innerHTML = parseInt(val1.value) / parseInt(val2.value)
+ 	operation = '/'
          
  })
+equals.addEventListener('click', function(){
+
+	if ( operation == '+'){
+	 		result.innerHTML = parseInt(val1.value) + parseInt(val2.value) 
+	 	}
+	 	else if (operation == '-'){
+	 		result.innerHTML = parseInt(val1.value) - parseInt(val2.value) 
+	 	}
+	 	else if (operation == '*'){
+	 		result.innerHTML = parseInt(val1.value) * parseInt(val2.value)
+	 	}
+	 	else  {
+	 	result.innerHTML = parseInt(val1.value) / parseInt(val2.value)
+	 }
+ operation = undefined
+
+ val1.value =''
+ val2.value =''
+})
