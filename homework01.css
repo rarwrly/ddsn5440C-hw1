@@ -1,0 +1,11 @@
+*{
+	background-color: pink;
+}
+#result{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+}
+#sum{
+	border: 4px;
+}
