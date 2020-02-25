@@ -1,7 +1,8 @@
 
 // Calculator Example
-var val1 = document.getElementById('val1')
-var val2 =document.getElementById('val2')
+var numText =document.getElementById('num-text')
+var val1
+var val2
 var addition = document.getElementById('button-addition')
 var subtraction = document.getElementById('button-subtraction')
 var multiplication = document.getElementById('button-multiplication')
@@ -9,40 +10,44 @@ var division = document.getElementById('button-division')
 var equals = document.getElementById('button-equals')
 var operation
 var result =document.getElementById('result')
-
+ 
 addition.addEventListener('click', function (){ 
  	operation = '+'
-         
+    val1 = parseInt(numText.value)
+    numText.value=''
  })
 
   subtraction.addEventListener('click', function (){ 
  	operation = '-'
-         
+     val1 = parseInt(numText.value)
+    numText.value=''    
  })
     multiplication.addEventListener('click', function (){ 
  	operation = '*'
-         
+    val1 = parseInt(numText.value)
+    numText.value=''     
  })
      division.addEventListener('click', function (){ 
  	operation = '/'
-         
+    val1 = parseInt(numText.value)
+    numText.value=''     
  })
 equals.addEventListener('click', function(){
-
+	val2 = parseInt(numText.value)
 	if ( operation == '+'){
-	 		result.innerHTML = parseInt(val1.value) + parseInt(val2.value) 
+	 		result.innerHTML = val1 + val2 
 	 	}
 	 	else if (operation == '-'){
-	 		result.innerHTML = parseInt(val1.value) - parseInt(val2.value) 
+	 		result.innerHTML = val1 - val2
 	 	}
 	 	else if (operation == '*'){
-	 		result.innerHTML = parseInt(val1.value) * parseInt(val2.value)
+	 		result.innerHTML = val1 * val2
 	 	}
-	 	else  {
-	 	result.innerHTML = parseInt(val1.value) / parseInt(val2.value)
+	 	else if (operation == '/') {
+	 	result.innerHTML = val1 / val2
 	 }
  operation = undefined
-
- val1.value =''
- val2.value =''
+	numText.value =''
+ /*val1.value =''
+ val2.value =''*/
 })
