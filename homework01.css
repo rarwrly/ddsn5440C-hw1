@@ -1,10 +1,14 @@
 *{
 	background-color: plum;
 }
+.wrapper{
+	width: 500px;
+}
 #result{
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 25px;
 	background-color: white;
+
 }
 #sum{
 	border: 4px;
