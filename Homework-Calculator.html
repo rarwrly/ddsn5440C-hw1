@@ -6,15 +6,62 @@
 </head>
 <body>
 	<div class = 'wrapper'>
-		<input type="text" id="val1" placeholder="Num1">
-		<button id= "button-addition">+</button>
-		<button id= "button-subtraction">-</button>
-		<button id= "button-division">/</button>
-		<button id= "button-multiplication">*</button>
-		<input type="text" id="val2" placeholder="Num2">
+		<div id = "number-input">
+			<input type="text" id ="num-text" placeholder="Input">
+		<!--<input type="text" id="val1" placeholder="Num1">-->
+		</div>
+		<div class="number-grid-container">
+  			<div class="grid-item"><button id= "button-7">7</button></div>
+  			<div class="grid-item"><button id= "button-8">8</button></div>
+  			<div class="grid-item"><button id= "button-9">9</button></div>
+  			<div class="grid-item"><button id= "button-addition">+</button></div> 
+  			<div class="grid-item"><button id= "button-4">4</button></div>
+  			<div class="grid-item"><button id= "button-5">5</button></div>
+  			<div class="grid-item"><button id= "button-6">6</button></div>
+  			<div class="grid-item"><button id= "button-subtraction">-</button></div>
+  			<div class="grid-item"><button id= "button-1">1</button></div>     
+  			<div class="grid-item"><button id= "button-2">2</button></div>
+  			<div class="grid-item"><button id= "button-3">3</button></div>
+  			<div class="grid-item"><button id= "button-multiplication">*</button></div>
+  			<div class="grid-item"><button id= "button-decimal">.</button></div>  
+  			<div class="grid-item"><button id= "button-0">0</button></div>
+  			<div class="grid-item"><button id= "button-equals">=</button></div>
+  			<div class="grid-item"><button id= "button-division">/</button></div>
+  			<div class="grid-item"><button id= "button-clear">Clear</button></div>     
+		</div>
+		<!--<input type="text" id="val2" placeholder="Num2">-->
 		
-		<div id="result"></div>
-		<div id="sum"></div>
+	
+
+		<div id="instructions">
+			<h1>how to use this calculator:</h1>
+			<ol>
+				<li>Click the button(s) for the first number you want to perform an operation on in the Input field</li>
+				<li>Click  the button for the operation (+, -, /, *) that you want to perfom</li>
+				<li>Click the button(s) for the second number that you want to perform an operation on in the Input field</li>
+				<li>Click the equals (=) button</li>
+				<li>The result will be output in the white result field</li>
+				<li>Click the Clear button at any point to reset the calculator</li>
+			</ol>
+			<pre>
+ _____________________
+|  _________________  |
+| | JO           0. | |
+| |_________________| |
+|  ___ ___ ___   ___  |
+| | 7 | 8 | 9 | | + | |
+| |___|___|___| |___| |
+| | 4 | 5 | 6 | | - | |
+| |___|___|___| |___| |
+| | 1 | 2 | 3 | | x | |
+| |___|___|___| |___| |
+| | . | 0 | = | | / | |
+| |___|___|___| |___| |
+|_____________________|
+
+
+			</pre>
+		</div>
 	</div>
 
 	<script type="text/javascript" src="homework01.js"></script>

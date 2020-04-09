@@ -1,11 +1,38 @@
 *{
-	background-color: pink;
+	background-color: plum;
+	font-family: 'Lucida Console', monospace;
+	font-size: 20px;
+}
+h1{
+	font-size: 30px;
+}
+.wrapper{
+	width: 500px;
 }
 #result{
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 25px;
 	background-color: white;
+
 }
 #sum{
 	border: 4px;
+}
+
+.number-grid-container {
+  display: grid;
+  grid-gap: 10px 20px;
+  grid-template-columns: 40px 40px 40px 40px;
+  padding: 10px;
+}
+
+.grid-item {
+  font-size: 40px;
+  text-align: center;
+}
+.operation-actions {
+  display: grid;
+  grid-gap: 10px 20px;
+  grid-template-columns: 40px ;
+  padding: 10px;
 }
